@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Conatct</li>
+                <li>Conatct</li>
+                <li>Conatct</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="wrapper">
+            <div class="inner-first"></div>
+            <div class="inner-second"></div>
+        </div>
+        <div>
+            <button id="get">Click here</button>
+            <button class="clickfun" id="click">Click Here</button>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+    <script>
+        var button = document.getElementById("get");
+        button.onclick = function (){
+            alert("You clicked me")
+        }
+        var button2 = document.getElementsByClassName("clickfun");
+        button2[0].style.backgroundColor = "red";
+        var button21 = document.getElementById("click");
+        button21.onclick = function(){
+            console.log("You clicked me");
+        }
+    </script>
+</body>
+</html>
